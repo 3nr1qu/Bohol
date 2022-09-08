@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B0H0L | Nature</title>
+    <link rel="icon " href="./../src1/bohol icon1.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../src1/style/nature.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./js/alert.js"> </script>
+</head>
+<style>
+    .cta {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../src1/para.jpg") fixed center center;
+        background-size: cover;
+        padding: 120px 0;
+    }
+
+
+    .cta h3 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .cta p {
+        color: #fff;
+    }
+
+    .cta .cta-btn {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 30px;
+        border-radius: 2px;
+        transition: 0.5s;
+        text-decoration: none;
+        margin: 10px;
+        background: #009961;
+        color: #fff;
+        border-radius: 50px;
+    }
+
+    .cta .cta-btn:hover {
+        background: #00b371;
+    }
+
+    @media (max-width: 1024px) {
+        .cta {
+            background-attachment: scroll;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .cta .cta-btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+</style>
+
+<body id="top">
+    <nav class="navbar fixed-top navbar-expand-sm bg-white p-2" style="color:black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <div class="container-fluid">
+            <a href="././Index.html" class="header-logo img"><img src="./../src1/mylogo.gif" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./Index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tourist Spot
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./Spots.html">Top 16 Places</a></li>
+                            <li><a class="dropdown-item" href="./nature.html">Natures</a></li>
+                            <li><a class="dropdown-item" href="./island&beaches.html">Islands & Beaches </a></li>
+                            <li><a class="dropdown-item" href="food.html">Foods & Delicacies</a></li>
+                            <li><a class="dropdown-item" href="monument.html">Monuments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./culture.html "></i>Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./article.html">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav mr-3 ml-5 d-flex flex-row">
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <ul class="navbar-nav  d-flex flex-row">
+                    <a class="btn21 " style="color: white;" data-bs-toggle="modal" data-bs-target="#panglao"
+                                href="#panglao"><i class="fa fa-phone "></i>
+                                
+                            </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="d-flex justify-content-center" id="nature">
+        <img src="./../src1/natures header.PNG" style="width: 90%; height: 100%;" alt="">
+    </div>
+    <div class="container mt-5 text-center mb-5 " style="font-style: italic;" data-aos="zoom-in-up">
+        <p>
+            <br>Bohol is one of the most popular and tourist-friendly destinations in the Philippines. This island
+            province in the
+            Central Visayas region <br> attracts visitors from all over the world because of its stunning and diverse
+            attractions,
+            <br>with the Chocolate Hills as its most famous tourist spot.
+        </p>
+    </div>
+    <br>
+    <section id="cta" class="cta">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-start" data-aos="zoom-in-up">
+                    <h3>Nature</h3>
+                    <p>Amidst the rice fields and fishing villages, you’ll find surprising things: unnatural-looking
+                        rounded hills as far as the eye can see, magical fireflies, lush green river, a goggle-eyed
+                        primate, and dazzling white-sand beaches on the next island across the bridge. Nature of Bohol
+                        is stunning and worth admiring for everyone. I prepared overview on few places I visited to
+                        check out the wildlife in Bohol. I want to encourage you to choose the activities wisely and get
+                        along with responsible tourism in Bohol.</p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <div class="category">
+                        <div>
+                            <a class="btns2 " style="color: white;" data-bs-toggle="modal" data-bs-target="#panglao"
+                                href="#panglao"><i class="fa fa-phone "></i>
+                                Contact Us
+                            </a>
+                        </div>
+                        <div class="modal" id="panglao">
+                            <div class="modal-dialog ">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <form>
+                                                    <div class="card border-secondary rounded-0">
+                                                        <div class="card-header p-0">
+                                                            <div class=" text-white text-center py-2"
+                                                                style="background-color: #009961;">
+                                                                <h3><i class="fa fa-envelope"></i> CONTACT FORM</h3>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body p-3">
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i
+                                                                                class="fa fa-user "
+                                                                                style="height: 25px;"></i></div>
+                                                                    </div>
+                                                                    <input type="text" class="form-control"
+                                                                        id="fullname" placeholder="Full Name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i
+                                                                                class="fa fa-envelope "
+                                                                                style="height: 25px;"></i></div>
+                                                                    </div>
+                                                                    <input type="email" class="form-control" id="email"
+                                                                        placeholder="example@gmail.com" required>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i
+                                                                                class="fa fa-comment "
+                                                                                style="height: 100px;"></i></div>
+                                                                    </div>
+                                                                    <textarea class="form-control"
+                                                                        placeholder="Enter Your Message"
+                                                                        required></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class=" text3 text-center">
+                                                                <button onclick="message()"
+                                                                    class="btns ">Submit</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="shell ">
+        <div class="container">
+            <div class="row">
+                <p class="text " style="color: #00b371;">Best Bohol Natures Should Visit</p>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/chocolate hiilss.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#cho">
+                                        1. Chocolate Hills
+                                    </button>
+                                </div>
+                                <div class="modal" id="cho">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Chocolate Hills</h5>
+                                                <img src="./../src1/nature/chocolate hiilss.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Chocolate Hills is the most famous Bohol tourist destination.
+                                                        There are more than 1,000 symmetrical mounds, conical and
+                                                        dome-shaped that most people liken them to Hershey’s Kisses. It
+                                                        is called the Chocolate Hills not because it’s made of chocolate
+                                                        but because of its color.
+
+                                                        In the rainy season, the grass blanketing the hills gives them a
+                                                        soft and lush appearance. While in the summer, the vegetation
+                                                        dies off and turns to a chocolatey brown hue, giving them their
+                                                        name. For a more detailed guide to Chocolate Hills</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Chocolate Hills is the most famous Bohol tourist destination...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/bamboohangingbridge.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#bam">
+                                        2. Bamboo Hanging Bridge
+                                    </button>
+                                </div>
+                                <div class="modal" id="bam">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Bamboo Hanging Bridge</h5>
+                                                <img src="./../src1/nature/bamboohangingbridge.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Sure hanging bridges are not new sights in the Philippines but
+                                                        have you seen one that’s made entirely out of bamboo? Also
+                                                        called Tigbao Hanging Bridge by the locals, this hanging bridge
+                                                        is made of woven bamboo straps and is suspended 83 feet above
+                                                        the Loboc River. Crossing this hanging bridge lets you see Loboc
+                                                        River in a different perspective.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Sure hanging bridges are not new sights in the Philippines but...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/danao.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#dan">
+                                        3. Danao Adventure Park
+                                    </button>
+                                </div>
+                                <div class="modal" id="dan">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Danao Adventure Park</h5>
+                                                <img src="./../src1/nature/danao.jpg" style="height: 40%; width: 90%;"
+                                                    alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>If you’re looking for a place where you can experience fun and
+                                                        exciting activities, Danao Adventure Park is the place to be.
+                                                        Here you can enjoy amazing activities here such as the zipline,
+                                                        bungee jumping, rappelling, paramotoring, root climbing, and
+                                                        various river activities.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>If you’re looking for a place where you can experience fun...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/dimiio.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#dim">
+                                        4. Dimiao Twin Waterfalls
+                                    </button>
+                                </div>
+                                <div class="modal" id="dim">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Dimiao Twin Waterfalls</h5>
+                                                <img src="./../src1/nature/dimiio.jpg" style="height: 40%; width: 90%;"
+                                                    alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>If you’re done touring the breathtaking Chocolate Hills and that
+                                                        buwis-buhay picture-taking in Man-Made Forest, it’s now time to
+                                                        have yourself relaxed at the famous Dimiao Twin Waterfalls also
+                                                        known as Pahangog Twin Falls. The twin falls is about 98 feet in
+                                                        height and surrounded by lush vegetation, including beautiful
+                                                        orchids. There are also cottages for rent, with fees ranging
+                                                        from P50 to P100 per day.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>If you’re done touring the breathtaking Chocolate Hills and...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/man-made forest.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#mad">
+                                        5. Man Made Forest
+                                    </button>
+                                </div>
+                                <div class="modal" id="mad">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Man Made Forest</h5>
+                                                <img src="./../src1/man-made forest.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Man-made Forest is a 2-kilometer stretch of mahogany trees. This
+                                                        forest stands out because of the mahogany trees’ uniformity in
+                                                        height, the spread of its branches, thickness and design of
+                                                        leaves.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Man-made Forest is a 2-kilometer stretch of mahogany trees. This ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/mirror.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#mir">
+                                        6. The Mirror of the World
+                                    </button>
+                                </div>
+                                <div class="modal" id="mir">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                The Mirror of the World</h5>
+                                                <img src="./../src1/nature/mirror.jpg" style="height: 40%; width: 90%;"
+                                                    alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>The 3.2-hectare park Mirror of the World is the result of love
+                                                        for travel. A couple in Bohol wanted the Filipinos to experience
+                                                        the world without having to hop on a plane. This Sikatuna Bohol
+                                                        tourist spot features some of the most famous landmarks in the
+                                                        world such as the Statue of Liberty in New York, Christ the
+                                                        Redeemer in Rio De Janeiro, Merlion in Singapore, and more,
+                                                        hence the name.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The 3.2-hectare park Mirror of the World is the result of love
+                                for....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/tarsier.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#tar">
+                                        7. Tarsier Sanctuary
+                                    </button>
+                                </div>
+                                <div class="modal" id="tar">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Tarsier Sanctuary</h5>
+                                                <img src="./../src1/tarsier.jpg" style="height: 40%; width: 90%;"
+                                                    alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>One of the must-visit Bohol tourist spots is the Philippine
+                                                        Tarsier and Wildlife Sanctuary. It is a large forest home to the
+                                                        endangered tarsiers. These 45 million-year-old small nocturnal
+                                                        primates with big round eyes usually cling to low branches or
+                                                        the trunks of slim trees. They are very delicate and
+                                                        emotionally-sensitive creatures that get stressed easily.
+                                                        According to the tour guides, tarsiers commit suicide by banging
+                                                        their heads against tree trunks when they get stressed, so
+                                                        visitors have to keep the noise level to a minimum. Visitors are
+                                                        allowed to take pictures except using the flash. And tarsiers
+                                                        aren’t allowed to be touched.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>One of the must-visit Bohol tourist spots is the Philippine
+                                Tarsier...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/hilltop-view-park.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#hill">
+                                        8. Hilltop 360 View Park
+                                    </button>
+                                </div>
+                                <div class="modal" id="hill">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Hilltop 360 View Park</h5>
+                                                <img src="./../src1/nature/hilltop-view-park.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>The newest tourist attraction in the
+                                                        Philippines having a 360 degrees mountain view featuring the
+                                                        panoramic scenery of Carmen, Bohol.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The newest tourist attraction in the
+                                Philippines having a 360...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/cabagnow-cave-pool.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#cab">
+                                        9. Cabagnow Cave Pool
+                                    </button>
+                                </div>
+                                <div class="modal" id="cab">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Cabagnow Cave Pool</h5>
+                                                <img src="./../src1/nature/cabagnow-cave-pool.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>The Cabagnow Cave Pool has an estimated of 20-25 feet deep, which
+                                                        is enough to swim and enjoy its clear water. And leaping out
+                                                        from the cliff has an estimated height of about 15-18 feet,
+                                                        which is enough to make your knees shaking in fear. It is
+                                                        peacefully located at Sitio Fatima, Bacong Anda, Bohol.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The Cabagnow Cave Pool has an estimated of 20-25 feet deep...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/cold-springs-bohol-003.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#lon">
+                                        10. Lonoy Cold Spring
+                                    </button>
+                                </div>
+                                <div class="modal" id="lon">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                onoy Cold Spring</h5>
+                                                <img src="./../src1/nature/cold-springs-bohol-003.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Lonoy Cold Spring is located in Jagna on Bohol Island. What is
+                                                        this? It's best visited from Anda town in East Bohol which is a
+                                                        38km drive with a journey time of 55 minutes. If you are staying
+                                                        in the main tourist area of Panglao, it's a 77 km drive that
+                                                        takes approximately 1 hour and 50 minutes</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Lonoy Cold Spring is located in Jagna on Bohol Island...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/pangas-falls.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#pan">
+                                        11. Pangas Falls
+                                    </button>
+                                </div>
+                                <div class="modal" id="pan">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Pangas Falls</h5>
+                                                <img src="./../src1/nature/pangas-falls.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Pangas Falls is one of the untouched marvels in the province of
+                                                        Bohol. It is nestled in the laidback barangay of Guadalupe in
+                                                        Carmen, Bohol. It doesn't draw much attention yet from the crowd
+                                                        and it hasn't been featured yet in a lot of sites, so the place
+                                                        is still considered an untouched piece of nature.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Pangas Falls is one of the untouched marvels in the...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/nature/Cadapdapan.jpg" data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#cad">
+                                        12. Cadapdapan Rice Terraces
+                                    </button>
+                                </div>
+                                <div class="modal" id="cad">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nature</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Cadapdapan Rice Terraces</h5>
+                                                <img src="./../src1/nature/Cadapdapan.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>
+                                                        With its splendid shades of green and eye-catching formations,
+                                                        the Cadapdapan Rice Terraces are a marvelous sight to behold.
+                                                        Although it’s not as grand and huge as Banaue, Bohol’s version
+                                                        still did put me under a spell. Entranced by its impressive
+                                                        beauty, I snapped a bunch of photos of one of the most
+                                                        underrated Bohol tourist spots. In my book, the Cadapdapan Rice
+                                                        Terraces look pretty similar to man-made wonders of Sapa,
+                                                        Vietnam</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p> With its splendid shades of green and eye-catching formations...</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <h3>BOHOLANO's</h3>
+            <p>"Welcome to Bohol, the friendly heart of the Visayas
+                and
+                one of
+                the most
+                attractive tourist destinations in the Philippines. We heartily invite you to come
+                and
+                visit Bohol
+                yourself, and offer you this website to help you get a first impression."</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong></strong><span>Bohol</span></strong>. All Rights Reserved 2021
+            </div>
+            <div class="credits">
+
+                Administered by <a href="">ENRIQUE ALFEREZ SIAROT</a>
+            </div>
+            <br>
+            <a href="#top" class="btn3"><i class="fa fa-arrow-up w3-margin-left"></i>To the
+                top</a>
+        </div>
+    </footer>
+</body>
+<script>
+    AOS.init();
+</script>
+</html>

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B0H0L | Monuments</title>
+    <link rel="icon " href="./../src1/bohol icon1.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../src1/style/monument.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./js/alert.js"> </script>
+</head>
+
+<style>
+    .cta {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../src1/para.jpg") fixed center center;
+        background-size: cover;
+        padding: 120px 0;
+    }
+
+
+    .cta h3 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .cta p {
+        color: #fff;
+    }
+
+    .cta .cta-btn {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 30px;
+        border-radius: 2px;
+        transition: 0.5s;
+        text-decoration: none;
+        margin: 10px;
+        background: #009961;
+        color: #fff;
+        border-radius: 50px;
+    }
+
+    .cta .cta-btn:hover {
+        background: #00b371;
+    }
+
+    @media (max-width: 1024px) {
+        .cta {
+            background-attachment: scroll;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .cta .cta-btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+</style>
+
+<body id="top">
+    <nav class="navbar fixed-top navbar-expand-sm bg-white p-2" style="color:black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <div class="container-fluid">
+            <a href="././Index.html" class="header-logo img"><img src="./../src1/mylogo.gif" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./Index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tourist Spot
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./Spots.html">Top 16 Places</a></li>
+                            <li><a class="dropdown-item" href="./nature.html">Natures</a></li>
+                            <li><a class="dropdown-item" href="./island&beaches.html">Islands & Beaches </a></li>
+                            <li><a class="dropdown-item" href="food.html">Foods & Delicacies</a></li>
+                            <li><a class="dropdown-item" href="monument.html">Monuments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./culture.html "></i>Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./article.html">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav mr-3 ml-5 d-flex flex-row">
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <ul class="navbar-nav  d-flex flex-row">
+                    <a class="btn21 " style="color: white;" data-bs-toggle="modal" data-bs-target="#panglao"
+                                href="#panglao"><i class="fa fa-phone "></i>
+                                
+                            </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div>
+        <div class="d-flex justify-content-center" id="monu">
+            <img src="./../src1/MONUMENTS HEADER.PNG" style="width: 90%; height: 100%;" alt="">
+        </div>
+    </div>
+    <div class="container mt-5 text-center mb-5" style="font-style: italic;" data-aos="zoom-in-up">
+        <p>
+            <br> Monuments
+            Scattered throughout Bohol, you will be surprised by the number of old churches and other buildings that
+            still
+            <br> remind us of the centuries of Spanish domination. Although sometimes somewhat dilapidated, <br> and
+            badly in need
+            of
+            restauration, they remind us of our past.
+        </p>
+    </div>
+    <br>
+    <section id="cta" class="cta">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-start"  data-aos="zoom-in-up">
+                    <h3>Monument in the Province of Bohol</h3>
+                    <p> Its claim to our recorded history starts with the "Sandugo,"
+                        the shedding of blood to seal a compact of friendship, peace, and cooperation between Datu
+                        Sikatuna and Miguel Lopez de Legazpi.</p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <div class="category">
+                        <div>
+                            <a class="btns2 " style="color: white;" data-bs-toggle="modal" data-bs-target="#panglao"
+                                href="#panglao"><i class="fa fa-phone "></i>
+                                Contact Us
+                            </a>
+                        </div>
+                        <div class="modal" id="panglao">
+                            <div class="modal-dialog ">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <form>
+                                                    <div class="card border-secondary rounded-0">
+                                                        <div class="card-header p-0">
+                                                            <div class=" text-white text-center py-2"
+                                                                style="background-color: #009961;">
+                                                                <h3><i class="fa fa-envelope"></i> CONTACT FORM</h3>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body p-3">
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i
+                                                                                class="fa fa-user "
+                                                                                style="height: 25px;"></i></div>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" id="nombre"
+                                                                        name="nombre" placeholder="Full Name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i
+                                                                                class="fa fa-envelope "
+                                                                                style="height: 25px;"></i></div>
+                                                                    </div>
+                                                                    <input type="email" class="form-control" id="nombre"
+                                                                        name="email" placeholder="example@gmail.com"
+                                                                        required>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i
+                                                                                class="fa fa-comment "
+                                                                                style="height: 100px;"></i></div>
+                                                                    </div>
+                                                                    <textarea class="form-control"
+                                                                        placeholder="Enter Your Message"
+                                                                        required></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class=" text3 text-center">
+                                                                <button onclick="message()"
+                                                                    class="btns ">Submit</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="shell ">
+        <div class="container">
+            <div class="row">
+                <p class="text " style="color: #00b371;">Best Bohol Monuments Should Visit</p>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/calape.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#cho">
+                                        1. Calape Church
+                                    </button>
+                                </div>
+                                <div class="modal" id="cho">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Calape Church</h5>
+                                                <img src="./../src1/Monument/calape.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>The Calape church is gothic-inspired. The town of Calape is named
+                                                        after type of
+                                                        rattan, called locally kapi or kalapi. Both town and parish
+                                                        dedicated to San Vicente
+                                                        Ferrer were founded in 1802.</p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>The Calape church is gothic-inspired. The town of Calape is...</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/albor.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#bam">
+                                        2. The Alburqerque Church
+                                    </button>
+                                </div>
+                                <div class="modal" id="bam">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                The Alburqerque Church</h5>
+                                                <img src="./../src1/Monument/albor.jpg" style="height: 40%; width: 90%;"
+                                                    alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>The Alburqerque Church, is a Roman Catholic church in the
+                                                        municipality of
+                                                        Alburquerque, Bohol, Philippines. The said parish is under the
+                                                        jurisdiction of the
+                                                        Diocese of Tagbilaran and was declared by the National Museum of
+                                                        the Philippines as
+                                                        Important Cultural Property in 2013.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The Alburqerque Church, is a Roman Catholic church in the...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/anda chuch.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#dan">
+                                        3. The Anda church
+                                    </button>
+                                </div>
+                                <div class="modal" id="dan">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                The Anda church</h5>
+                                                <img src="./../src1/Monument/anda chuch.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <p>The Anda church is cruciform with a plain and austere façade enlivened by
+                                                    doors and
+                                                    windows. The interior however is a pleasant surprise with the
+                                                    colorful ceiling
+                                                    paintings by Ray Francia, the retablos the use Greco-Roman motifs,
+                                                    and the Art Deco
+                                                    confessionals. </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The church is cruciform with a plain and austere façade...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/baclayon-church-in-bohol.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#dim">
+                                        4. Backlayon Church
+                                    </button>
+                                </div>
+                                <div class="modal" id="dim">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Backlayon Church</h5>
+                                                <img src="./../src1/Monument/baclayon-church-in-bohol.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>One of the most historic places to visit in Bohol is the
+                                                        Baclayon Church, also known as the Church of Immaculada
+                                                        Concepcion. Built in 1717,
+                                                        it is considered
+                                                        to be one of the oldest in the Philippines. Millions of white
+                                                        eggs were said to have
+                                                        been used as
+                                                        cement for the church.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>One of the most historic places to visit in Bohol is the...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/blood compact shrine.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#mad">
+                                        5. Blood Compact Shrine
+                                    </button>
+                                </div>
+                                <div class="modal" id="mad">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Blood Compact Shrine</h5>
+                                                <img src="./../src1/Monument/blood compact shrine.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Blood Compact Shrine A historical marker which marks the location of where Datu
+                                                        Sikatuna, a native
+                                                        chieftain, forged a blood compact with Don Miguel Lopez de
+                                                        Legazpi representing the
+                                                        King of Spain, for the purpose of fostering friendly relations
+                                                        between the two
+                                                        nations. The Blood Compact on March 16, 1565 is considered the
+                                                        first "Treaty of
+                                                        Friendship" between Europe and Asia.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>A historical marker which marks the location of where Datu...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/presidential.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#mir">
+                                        6. President Carlos Memorial Park
+                                    </button>
+                                </div>
+                                <div class="modal" id="mir">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                President Carlos Memorial Park</h5>
+                                                <img src="./../src1/Monument/presidential.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>President Carlos Memorial Park A joint undertaking of Boholanos from all over the country and
+                                                        abroad have erected a
+                                                        park in loving memory of the greatest Boholano -- Carlos
+                                                        Polestico Garcia, the
+                                                        fourth President of the Republic of the Philippines. It sits on
+                                                        a rolling site with
+                                                        an area of 11 hectares chosen by Pres. Carlos P. Garcia himself
+                                                        in 1939 when he was
+                                                        still the governor of Bohol. Here, one can see the exquisite
+                                                        monument of marble base
+                                                        and a life-size bronze statue by Bohol's famous sculptor and a
+                                                        National Artist
+                                                        Napoleon Abueva. The said park is located in front of Bohol
+                                                        Wisdom School.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>A joint undertaking of Boholanos from all over the country and...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/mt-carmel-hill.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#tar">
+                                        7. Mt. Carmel Hill
+                                    </button>
+                                </div>
+                                <div class="modal" id="tar">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Mt. Carmel Hill</h5>
+                                                <img src="./../src1/Monument/mt-carmel-hill.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Mt. Carmel Hill is Located 24 km from Tagbilaran City. Atop the Mt. Carmel Hill,
+                                                        right in the heart of
+                                                        Balilihan town, is a historical tower of adobe and limestone.
+                                                        These materials were
+                                                        hauled from the town of Baclayon. It was built to serve as a
+                                                        belfry of a church
+                                                        which was burned down during the Philippine revolution. Like a
+                                                        sentinel, the tower
+                                                        stands as guard over the town. Concrete stairways were built to
+                                                        make the tower more
+                                                        accessible. </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Located 24 km from Tagbilaran City. Atop the Mt. Carmel Hill...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/statue-in-front-.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#hill">
+                                        8. Statue in Tagbilaran
+                                    </button>
+                                </div>
+                                <div class="modal" id="hill">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Statue in Tagbilaran</h5>
+                                                <img src="./../src1/Monument/statue-in-front-.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>The Statue in Tagbilaran is one of the first 6 parishes founded
+                                                        by the Jesuit missionaries who came to Bohol in 1595. Saint
+                                                        Joseph the Worker, a favorite among the Jesuits, was enthroned
+                                                        as the patron saint by Rev. Fr. Joaquin de San Jose in 1767, a
+                                                        year before the Jesuits were expelled from the country. </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The parish of Tagbilaran is one of the first 6 parishes founded...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/dagohoy-mark.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#cab">
+                                        9. Dagohoy Marker
+                                    </button>
+                                </div>
+                                <div class="modal" id="cab">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Dagohoy Marker</h5>
+                                                <img src="./../src1/Monument/dagohoy-mark.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>The Dagohoy historical marker in Magtangtang, Danao was installed
+                                                        by the Philippine
+                                                        Historical Comission to commemorate the heroic deeds of
+                                                        Francisco Dagohoy who led
+                                                        the longest revolt in the country against the Spaniards which
+                                                        lasted for 84 years.
+                                                        Magtangtang was Dagohoy's headquarters or hideout during the
+                                                        revolt. Hundreds of
+                                                        Dagohoy's followers preferred death inside the cave than
+                                                        surrender. Their skeletal
+                                                        remains still exist today.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The Dagohoy historical marker in Magtangtang, Danao was...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/Punta_Cruz_Watchtower,_Maribojoc,_Bohol.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#lon">
+                                        10. Punta Cruz
+                                    </button>
+                                </div>
+                                <div class="modal" id="lon">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Punta Cruz</h5>
+                                                <img src="./../src1/Monument/Punta_Cruz_Watchtower,_Maribojoc,_Bohol.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>The Punta Cruz is an ancient stone watchtower built by the
+                                                        townspeople as a lookout
+                                                        for incoming pirates. On a rock lip that juts out into the sea,
+                                                        fronting the tower,
+                                                        stands a wooden cross. Legend has it that by extending a
+                                                        mysterious spell over the
+                                                        sea, the cross has saved many people from the ravages of pirates
+                                                        and marauders. The
+                                                        tower holds a commanding view of the sea facing Cebu, Siquijor
+                                                        and Mindanao and has
+                                                        been officially designated as a historical tourist spot.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The Punta Cruz is an ancient stone watchtower built by the
+                                towns...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/light.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#pan">
+                                        11. Balicasag Lighthouse
+                                    </button>
+                                </div>
+                                <div class="modal" id="pan">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Balicasag Lighthouse</h5>
+                                                <img src="./../src1/Monument/light.jpg" style="height: 40%; width: 90%;"
+                                                    alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Balicasag Lighthouse is also touted as the country's second best diving
+                                                        spot. The island's north
+                                                        and northwest side has a narrow shelf, 10 to 50 m. wide and
+                                                        about 7 m. deep, ending
+                                                        in 2 excellent vertical walls that fall forever</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Balicasag is also touted as the country's second best diving...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Monument/800px-The_treasures_of_loay.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#cad">
+                                        12. The Treasure of Loay
+                                    </button>
+                                </div>
+                                <div class="modal" id="cad">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Monuments</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                The Treasure of Loay</h5>
+                                                <img src="./../src1/Monument/800px-The_treasures_of_loay.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>The Treasure of Loay <br> The churches of Bohol have these in common: elaborately painted
+                                                        ceiling, colorful
+                                                        floor tiles and old pipe organs at the loft. The smalltown,
+                                                        unassuming church of
+                                                        Loay is not an exception. The smallest church compared to the
+                                                        grand Baclayon and
+                                                        Dauis, but this church looked the most preserved and surprising
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The churches of Bohol have these in common: elaborately painted...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <h3>BOHOLANO's</h3>
+            <p>"Welcome to Bohol, the friendly heart of the Visayas
+                and
+                one of
+                the most
+                attractive tourist destinations in the Philippines. We heartily invite you to come
+                and
+                visit Bohol
+                yourself, and offer you this website to help you get a first impression."</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong></strong><span>Bohol</span></strong>. All Rights Reserved 2021
+            </div>
+            <div class="credits">
+
+                Administered by <a href="">ENRIQUE ALFEREZ SIAROT</a>
+            </div>
+            <br>
+            <a href="#top" class="btn3"><i class="fa fa-arrow-up w3-margin-left"></i>To the
+                top</a>
+        </div>
+    </footer><!-- End Footer -->
+
+</body>
+<script>
+    AOS.init();
+</script>
+</html>

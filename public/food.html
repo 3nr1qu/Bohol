@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B0H0L | Foods & Delicacies</title>
+    <link rel="icon " href="./../src1/bohol icon1.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../src1/style/food.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./js/alert.js"> </script>
+</head>
+<style>
+    .cta {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../src1/foodsgif.gif") fixed center center;
+        background-size: cover;
+        padding: 120px 0;
+    }
+
+
+    .cta h3 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .cta p {
+        color: #fff;
+    }
+
+    .cta .cta-btn {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 30px;
+        border-radius: 2px;
+        transition: 0.5s;
+        text-decoration: none;
+        margin: 10px;
+        background: #009961;
+        color: #fff;
+        border-radius: 50px;
+    }
+
+    .cta .cta-btn:hover {
+        background: #00b371;
+    }
+
+    @media (max-width: 1024px) {
+        .cta {
+            background-attachment: scroll;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .cta .cta-btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+</style>
+
+<body id="top">
+    <nav class="navbar fixed-top navbar-expand-sm bg-white p-2" style="color:black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <div class="container-fluid">
+            <a href="././Index.html" class="header-logo img"><img src="./../src1/mylogo.gif" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./Index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tourist Spot
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./Spots.html">Top 16 Places</a></li>
+                            <li><a class="dropdown-item" href="./nature.html">Natures</a></li>
+                            <li><a class="dropdown-item" href="./island&beaches.html">Islands & Beaches </a></li>
+                            <li><a class="dropdown-item" href="food.html">Foods & Delicacies</a></li>
+                            <li><a class="dropdown-item" href="monument.html">Monuments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./culture.html "></i>Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./article.html">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav mr-3 ml-5 d-flex flex-row">
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <ul class="navbar-nav  d-flex flex-row">
+                    <a class="btn21 " style="color: white;" data-bs-toggle="modal" data-bs-target="#panglao"
+                                href="#panglao"><i class="fa fa-phone "></i>
+                                
+                            </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="d-flex justify-content-center">
+        <img src="./../src1/delicacies header.PNG" style="width: 90%; height: 100%;" alt="">
+    </div>
+
+    <div class="container mt-5 text-center mb-5" style="font-style: italic;" data-aos="zoom-in-up">
+        <p>
+            <br>American chef and travel documentarian Anthony Bourdain once said, “I think food, culture, people, and
+            landscape are all absolutely inseparable.” <br> The explorer of international cuisine couldn’t have said it
+            any better. When visiting any destination, it’s essential to sample the local fare. <br> We’re not just
+            talking about a country’s all-star dishes, but even the cuisine unique to a region or town.
+        </p>
+    </div>
+    <br>
+    <section id="cta" class="cta">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-start"  data-aos="zoom-in-up">
+                    <h3>Delicacies</h3>
+                    <p> Bohol is further known for its festivities and merry-making. And one thing to boast upon is the
+                        native mouth-watering delights that are already been recognized worldwide as signature "Boholano
+                        Delicacies".</p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <div class="category">
+                        <div>
+                            <a class="btns2 " style="color: white;" data-bs-toggle="modal" data-bs-target="#panglao"
+                                href="#panglao"><i class="fa fa-phone "></i>
+                                Contact Us
+                            </a>
+                        </div>
+                        <div class="modal" id="panglao">
+                            <div class="modal-dialog ">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <form>
+                                                    <div class="card border-secondary rounded-0">
+                                                        <div class="card-header p-0">
+                                                            <div class=" text-white text-center py-2"
+                                                                style="background-color: #009961;">
+                                                                <h3><i class="fa fa-envelope"></i> CONTACT FORM</h3>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body p-3">
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i
+                                                                                class="fa fa-user "
+                                                                                style="height: 25px;"></i></div>
+                                                                    </div>
+                                                                    <input type="text" class="form-control"
+                                                                        id="fullname" placeholder="Full Name" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i
+                                                                                class="fa fa-envelope "
+                                                                                style="height: 25px;"></i></div>
+                                                                    </div>
+                                                                    <input type="email" class="form-control" id="email"
+                                                                        placeholder="example@gmail.com" required>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i
+                                                                                class="fa fa-comment "
+                                                                                style="height: 100px;"></i></div>
+                                                                    </div>
+                                                                    <textarea class="form-control"
+                                                                        placeholder="Enter Your Message"
+                                                                        required></textarea>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class=" text3 text-center">
+                                                                <button onclick="message()"
+                                                                    class="btns ">Submit</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="shell ">
+        <div class="container">
+            <div class="row">
+                <p class="text " style="color: #00b371;">Best Bohol Foods & Delicacies Should Visit</p>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/1. bibingka.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#cho">
+                                        1. Bibingka
+                                    </button>
+                                </div>
+                                <div class="modal" id="cho">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Bibingka</h5>
+                                                <img src="./../src1/Food/1. bibingka.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>The bibingka, or rice cake, is popular all over the Philippines
+                                                        and is prepared in different variations. The bibingka we know in
+                                                        Manila is dark yellow in color, and is usually topped with
+                                                        salted egg, and baked using charcoal, intentionally toasted to
+                                                        add to the flavor.</p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>The Bibingka, or rice cake, is popular all over the Philippines...</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/11. bohol-tablea.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#bam">
+                                        2. Tablea
+                                    </button>
+                                </div>
+                                <div class="modal" id="bam">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Tablea</h5>
+                                                <img src="./../src1/Food/11. bohol-tablea.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Tablea are discs shaped out of pure roasted ground cocoa beans.
+                                                        What makes Bohol’s
+                                                        tablea so special is that they’re much sweeter compared to other
+                                                        variations from
+                                                        other places in the Philippines that are more bitter. This is
+                                                        why many people stock
+                                                        up on Bohol tablea when they visit the island.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Tablea are discs shaped out of pure roasted ground cocoa bea...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/12. bohol-broas-ladyfinger.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#dan">
+                                        3. Broas
+                                    </button>
+                                </div>
+                                <div class="modal" id="dan">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Broas</h5>
+                                                <img src="./../src1/Food/12. bohol-broas-ladyfinger.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <p>Broas or Ladyfingers are made from eggs, flour and sugar. These
+                                                    simple ingredients are enough to create Osang's delicious
+                                                    specialties. It is baked “pugon-style” using old fashioned charcoal.
+                                                    No high-tech machines are used which adds to Osang's broas'
+                                                    marketability. </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Broas or Ladyfingers are made from eggs, flour and sugar...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/2. calamay.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#cala">
+                                        4. Calamay
+                                    </button>
+                                </div>
+                                <div class="modal" id="cala">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Calamay</h5>
+                                                <img src="./../src1/Food/2. calamay.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>This sweet and sticky snack is another must-try Boholano
+                                                        delicacy. One of the most
+                                                        popular Bohol pasalubongs, Kalamay is made from glutinous rice,
+                                                        brown sugar, and
+                                                        coconut milk. There is also another variation of Kalamay which
+                                                        has peanuts.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>This sweet and sticky snack is another must-try Boholano
+                                ....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/5.biko.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#mad">
+                                        5. Biko
+                                    </button>
+                                </div>
+                                <div class="modal" id="mad">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Biko</h5>
+                                                <img src="./../src1/Food/5.biko.jpg" style="height: 40%; width: 90%;"
+                                                    alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>A famous Filipino recipe and can be seen in almost all Filipino
+                                                        celebrations. It is
+                                                        made of glutinous rice, coconut milk, sugar (latik).Biko is a
+                                                        sweet rice cake from the Philippines. It is made of coconut
+                                                        milk, brown sugar, ginger, and glutinous rice. It is usually
+                                                        topped with latik (either or both the coconut curds or the
+                                                        syrupy caramel-like variant).</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>A famous Filipino recipe and can be seen in almost all Filipino
+                                ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/7. peanut kisses.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#mir">
+                                        6. Peanut Kisses
+                                    </button>
+                                </div>
+                                <div class="modal" id="mir">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Peanut Kisses</h5>
+                                                <img src="./../src1/Food/7. peanut kisses.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Bohol’s most popular delicacy, Peanut Kisses are hill-shaped
+                                                        cookies that promise
+                                                        nutty goodness in every bite. The cookies are made from peanuts
+                                                        and egg whites,
+                                                        baked to crunchy perfection. This snack is offered by most
+                                                        department stores and
+                                                        souvenir shops around Bohol. In fact, Peanut Kisses are so
+                                                        popular that they are
+                                                        also available in Cebu and select souvenir shops in other
+                                                        tourist destinations in
+                                                        the country. </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Bohol’s most popular delicacy, Peanut Kisses are hill-shaped
+                                ....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/9. bohol-ube-polvoron.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#tar">
+                                        7. Ube Kinampay
+                                    </button>
+                                </div>
+                                <div class="modal" id="tar">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Ube Kinampay</h5>
+                                                <img src="./../src1/Food/9. bohol-ube-polvoron.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Polvoron is a popular crumbly shortbread cookie that is normally
+                                                        made with milk and
+                                                        crushed nuts. Being one of the largest producers of ube (or ubi)
+                                                        in the Philippines,
+                                                        Bohol’s delicious special ube kinampay polvoron takes it up a
+                                                        notch by incorporating
+                                                        this delicious purple yam to add both sweetness and flavor.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Polvoron is a popular crumbly shortbread cookie that is normal...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/10. pinakbet.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#hill">
+                                        8. Pinakbet
+                                    </button>
+                                </div>
+                                <div class="modal" id="hill">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Pinakbet</h5>
+                                                <img src="./../src1/Food/10. pinakbet.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Pinakbet (also called pakbet or pinak bet) is an indigenous
+                                                        Filipino dish from the northern regions of the Philippines
+                                                        escpecially in Bohol.
+                                                        Pinakbet is made from mixed vegetables sautéed in fish or shrimp
+                                                        sauce. ... Most of these vegetables are easily accessible and
+                                                        are grown in backyards and gardens of most Ilocano households.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Pinakbet (also called pakbet or pinak bet) is an indigenous
+                                ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/3. Fish-Sinanglay.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#cab">
+                                        9. Fish Sinanglay
+                                    </button>
+                                </div>
+                                <div class="modal" id="cab">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Fish Sinanglay</h5>
+                                                <img src="./../src1/Food/3. Fish-Sinanglay.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Ginger and lemongrass, along with turmeric are typical
+                                                        ingredients in Boholano
+                                                        cuisine. Man, I love getting to eat new foods. Another treat
+                                                        from Chef Rafael
+                                                        Ongchiong was his version of Balbacua which was made from oxtail
+                                                        and trotters. This
+                                                        one isn’t for everyone, but I loved it. </p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Ginger and lemongrass, along with turmeric are typical
+                                ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/4. Lechon.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#lon">
+                                        10. Lechon Baboy
+                                    </button>
+                                </div>
+                                <div class="modal" id="lon">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Lechon Baboy</h5>
+                                                <img src="./../src1/Food/4. Lechon.jpg" style="height: 40%; width: 90%;"
+                                                    alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>But nothing is more appealing than the rich taste of freshest
+                                                        seafood, directly from
+                                                        the day’s catch. Known as one of the biggest marine
+                                                        biodiversities in the world,
+                                                        Bohol is one of the few where seafood is plenteous and
+                                                        guaranteed fresh. Seafood
+                                                        Festivals are common in big restaurants.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>But nothing is more appealing than the rich taste of freshest
+                                ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/HalangHalang640.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#pan">
+                                        11. Halang-Halang
+                                    </button>
+                                </div>
+                                <div class="modal" id="pan">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Halang-Halang</h5>
+                                                <img src="./../src1/Food/HalangHalang640.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>Chicken Halang Halang is a Filipino dish which is basically a
+                                                        mash up between Chicken
+                                                        Tinola (Chicken Ginger Soup) and Ginataang Manok </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Chicken Halang Halang is a Filipino dish which is basically a
+                                ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wsk-cp-product">
+                        <div class="wsk-cp-img">
+                            <img src="./../src1/Food/8. kinilaw.jpg"  data-aos="zoom-in-up"/>
+                        </div>
+                        <div class="wsk-cp-text text-center">
+                            <div class="category">
+                                <div>
+                                    <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#cad">
+                                        12. Kinilaw na Isda
+                                    </button>
+                                </div>
+                                <div class="modal" id="cad">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header" style="background-color: #00b371; color: white;">
+                                                <h3 class="modal-title"
+                                                    style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                    Foods & Delicacies</h3>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body p-3">
+                                                <h5 class="modal-title"
+                                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                                Kinilaw na Isda</h5>
+                                                <img src="./../src1/Food/8. kinilaw.jpg"
+                                                    style="height: 40%; width: 90%;" alt="">
+                                                <div class="container p-4" style="text-align: justify;">
+                                                    <p>It's also the ever-important “kil” in the term sutukil
+                                                        (“soo-too-kill”), a favorite local pun (“shoot to kill”) and a
+                                                        portmanteau for how Cebuanos traditionally cook: sugba
+                                                        (grilling), tuwa (simmering in broth), and kilaw (eating raw).
+                                                    </p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>It's also the ever-important “kil” in the term sutukil
+                                (“soo-too...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <h3>BOHOLANO's</h3>
+            <p>"Welcome to Bohol, the friendly heart of the Visayas
+                and
+                one of
+                the most
+                attractive tourist destinations in the Philippines. We heartily invite you to come
+                and
+                visit Bohol
+                yourself, and offer you this website to help you get a first impression."</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong></strong><span>Bohol</span></strong>. All Rights Reserved 2021
+            </div>
+            <div class="credits">
+
+                Administered by <a href="">ENRIQUE ALFEREZ SIAROT</a>
+            </div>
+            <br>
+            <a href="#top" class="btn3"><i class="fa fa-arrow-up w3-margin-left"></i>To the
+                top</a>
+        </div>
+    </footer><!-- End Footer -->
+</body>
+<script>
+    AOS.init();
+</script>
+</html>

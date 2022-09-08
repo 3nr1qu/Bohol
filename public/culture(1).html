@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B0H0L | Cultures</title>
+    <link rel="icon " href="./../src1/bohol icon1.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./../src1/style/culture.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="./js/alert.js"> </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    .cta {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../src1/para.jpg") fixed center center;
+        background-size: cover;
+        padding: 120px 0;
+    }
+
+
+    .cta h3 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .cta p {
+        color: #fff;
+    }
+
+    .cta .cta-btn {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 30px;
+        border-radius: 2px;
+        transition: 0.5s;
+        text-decoration: none;
+        margin: 10px;
+        background: #009961;
+        color: #fff;
+        border-radius: 50px;
+    }
+
+    .cta .cta-btn:hover {
+        background: #00b371;
+    }
+
+    @media (max-width: 1024px) {
+        .cta {
+            background-attachment: scroll;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .cta .cta-btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+</style>
+<body id="top">
+    <nav class="navbar fixed-top navbar-expand-sm bg-white p-2" style="color:black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <div class="container-fluid">
+            <a href="././Index.html" class="header-logo img"><img src="./../src1/mylogo.gif" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./Index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tourist Spot
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./Spots.html">Top 16 Places</a></li>
+                            <li><a class="dropdown-item" href="./nature.html">Natures</a></li>
+                            <li><a class="dropdown-item" href="./island&beaches.html">Islands & Beaches </a></li>
+                            <li><a class="dropdown-item" href="food.html">Foods & Delicacies</a></li>
+                            <li><a class="dropdown-item" href="monument.html">Monuments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./culture.html "></i>Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./article.html">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav mr-3 ml-5 d-flex flex-row">
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="#!">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <ul class="navbar-nav  d-flex flex-row">
+                    <a class="btn21 " style="color: white;" data-bs-toggle="modal" data-bs-target="#panglao"
+                                href="#panglao"><i class="fa fa-phone "></i>
+                                
+                            </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="center">
+        <h1 class="center__text glitch is-glitching" data-text="CULTURES">CULTURES</h1>
+
+    </div>
+    <div class="container mt-3 mb-5"  data-aos="zoom-in-up">
+        <p class="text10 text-center "> <br> The Boholano culture is much like the culture of the
+            Philippines <br>
+
+
+            The echoes of history resound in Bohol. Bohol is also a land of
+            history, a land of heroes. <br> The
+            Blood Compact between Miguel Lopez de Legazpi and Datu Sikatuna, the Longest Revolt against
+            Spanish Colonialism <br> led by Francisco Dagohoy – these are just but two important historical
+            chapters in Philippine history, contributing to the shaping of Filipino <br> nationhood through the
+            courage, patriotism, creativity, sense of brotherhood, and commitment of our Boholano heroes and
+            statesment.</p>
+
+    </div>
+    <section id="cta" class="cta">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-start"  data-aos="zoom-in-up">
+                    <h3>Boholano culture</h3>
+                    <p> The Boholano is much like the culture of the Philippines (specifically of the Visayas).
+                        It is based on the majority population of Austronesian peoples on the island. There are
+                        influences from indigenous Melanesian people such as the Eskaya tribe, and from the colonizing
+                        Spanish and trade with Mexico.</p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <div class="category">
+                        <div>
+                            <a class="btns2 " style="color: white;" data-bs-toggle="modal" data-bs-target="#panglao" href="#panglao"><i
+                                class="fa fa-phone "></i>
+                                Contact Us
+                            </a>
+                        </div>
+                        <div class="modal" id="panglao">
+                            <div class="modal-dialog ">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                            <form>
+                                                <div class="card border-secondary rounded-0">
+                                                    <div class="card-header p-0">
+                                                        <div class=" text-white text-center py-2" style="background-color: #009961;">
+                                                            <h3><i class="fa fa-envelope"></i> CONTACT FORM</h3>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i
+                                                                            class="fa fa-user "
+                                                                            style="height: 25px;"></i></div>
+                                                                </div>
+                                                                <input type="text" class="form-control"
+                                                                    id="fullname" placeholder="Full Name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i
+                                                                            class="fa fa-envelope "
+                                                                            style="height: 25px;"></i></div>
+                                                                </div>
+                                                                <input type="email" class="form-control" id="email"
+                                                                    placeholder="example@gmail.com" required>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i
+                                                                            class="fa fa-comment "
+                                                                            style="height: 100px;"></i></div>
+                                                                </div>
+                                                                <textarea class="form-control"
+                                                                    placeholder="Enter Your Message"
+                                                                    required></textarea>
+                                                            </div>
+                                                        </div> 
+                                                        <div class=" text3 text-center">
+                                                            <button onclick="message()" class="btns ">Submit</button>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                            </form>
+                                        </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="mb-5 p-2" style="color: rgb(0, 0, 0); text-align: justify;">
+                <br>
+                <h3 style="text-align:center;"  data-aos="zoom-in-up">General Information</h3>
+                <p  data-aos="zoom-in-up">
+                    <span class="p-4"></span>The province of Bohol is a first-class A province composed of 47
+                    municipalities and one city,
+                    Tagbilaran, which serves as its capital. There are 1,109 barangays with a total population of
+                    948,315 (1992) with an average household size of 5.4.
+                </p>
+                <P  data-aos="zoom-in-up">
+
+                    <span class="p-4"></span>Bohol is one of the country’s prime travel destinations due to its unique,
+                    natural features and
+                    attractions, and historical landmarks. It is the home of the world-famous Chocolate Hills, which are
+                    thousands of near perfect, cone-shaped, chocolate-brown colored hills. It is also the home of the
+                    ‘tarsier’, known as the world’s smallest primate. Beaches for swimming, diving and whale-watching
+                    include Panglao, Balicasag and Pamilacan. Historical attractions include the Treaty of Friendship in
+                    Tagbilaran City, Ermita Ruins of Dimiao, the Punta Cruz Watch Tower, the Anibogan Massacre site, the
+                    Ubojan Marker, the guerilla bastions of Camp Verde and Behind the Clouds in Catigbian. Churches
+                    include the Baclayon Church, the oldest stone church in the Philippines built by Jesuits in 1595,
+                    the three-story Dauis, Loboc and Loon. Other natural attractions include the Hinagdanan and Batungay
+                    Caves, Logarita, Cabasi, Roxas and Badiang natural springs, Tontonan, Mag-aso, Camugao, Inambacan,
+                    Kawasan and Niluksoan waterfalls.
+
+                </P>
+                <p  data-aos="zoom-in-up"><b>Population</b> <br>
+                    Bohol's population is relatively young with 39% of its household population below 15 years old.
+                    Since 1960 until the census in 1980, there were more females than males. In the census in 1990, the
+                    number of males was higher than females. Likewise, there were more single males than females. Every
+                    10 adults (of working/productive age) in supporting seven children and one elderly person. Almost
+                    95% of the household population (5 years old and over) in Bohol have resided in the same
+                    municipality for at least five years. <br>
+
+                    The majority of the people in Bohol live in the rural area. The province's density is two people to
+                    a hectare. Only 25% live in urban areas. Bohol's population has almost doubled since the census in
+                    1948 due largely to natural increase. It will take another 42 years to double Bohol's population at
+                    the present growth rate of 1.6% or 15,544 annually. Most Boholano women marry at the age of 21. On
+                    average, most couples have four children.
+                </p>
+                
+                <p  data-aos="zoom-in-up">
+                    <b >Language/Dialect</b>
+                    The majority speak the native dialect which is distinctively Boholano. Cebuano, Tagalog and English
+                    are also spoken and understood.
+                </p>
+                
+                <p  data-aos="zoom-in-up">
+                    <b >Religion</b>Over 90% of the population are Christian and over 80% are Roman Catholic. The religous practices are
+                    heavily influenced by more than 300 years of Spanish colonization. Other religions in Bohol are
+                    Protestants, Iglesia ni Kristo, Mormons, Islam and others.</p>
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container" data-aos="zoom-in-up">
+        <div class="row d-flex justify-content-center" id="vid">
+            <video style="width: 800px; height: 500%; " controls src="./../src1/yt1s.com - Sandugo Festival 2018.mp4"
+                loop class="video"></video>
+        </div>
+    </div>
+
+
+    <div class="shell " >     
+        <div class="container" id="cul">
+            <div class="row">
+                <p class="text " style="color: #00b371;">Different Culture Places</p>
+                <div class="container1 "data-aos="zoom-in-up">
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#sandu"> <img
+                                    src="./../src1/tourist/sandugo shrine.jpg" /><span>Sandugo</span></a></div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#ronda"><img
+                                    src="./../src1/tourist/1/rondalla.jpg" /><span>Rondalla</span></a></div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#tres"><img
+                                    src="./../src1/tourist/1/800px-The_treasures_of_loay.jpg" /><span>Treasure</span></a>
+                        </div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#mansion"> <img
+                                    src="./../src1/tourist/1/Balili_Heritage_Ancestral_Mansion_in_Tagbilarans_Cultural_Hub.jpg" /><span>Heritage</span></a>
+                        </div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#marker"><img
+                                    src="./../src1/tourist/1/dagohoy-mark.jpg" /><span>Marker</span></a></div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#presi"><img
+                                    src="./../src1/tourist/1/presidential.jpg" /><span>Presidential</span></a></div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#tik"> <img
+                                    src="./../src1/tourist/1/tikang sa.jpg" /><span>Tikang</span></a></div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#san"><img
+                                    src="./../src1/Monument/festival.png" /><span>Sandugo Festival</span></a></div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#cate"><img
+                                    src="./../src1/Monument/catedral-san-jose-tagbilaran.jpg" /><span>Catedral
+                                    Tagbilaran</span></a></div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#dauis"><img
+                                    src="./../src1/Monument/dauis-watchtower-inscriptio.jpg" /><span>Dauis
+                                    Inscription</span></a></div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#punta"> <img
+                                    src="./../src1/Monument/Punta_Cruz_Watchtower,_Maribojoc,_Bohol.jpg" /><span>Punta
+                                    Tower</span></a></div>
+                    </div>
+                    <div class="thumbex">
+                        <div class="thumbnail"><a href="./culturesss.html#pami"><img
+                                    src="./../src1/Monument/pamilican.jpg" /><span>Pamilacan Watchtower</span></a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="mb-5 p-2" style="color: rgb(0, 0, 0); text-align: justify;">
+                <br>
+                <h3 style="text-align:center;" data-aos="zoom-in-up">HISTORY</h3><br>
+                <p data-aos="zoom-in-up">
+                    <b> A Short History of Bohol (Part I)
+                        IJsselstein, Friday, 29 March 2002 (updated: Monday, 3 December 2007)</b> <br><br>
+                    Although people have been living on Bohol long before Magellan reached the islands that are now the
+                    Philippines, our written records start here, and about the events before that time, little is known,
+                    and has to be carefully reconstructed from oral traditions and archaeological evidence.
+
+                    It is said that around 1200, the Lutaos arrived from northern Mindanao. They build a settlement on
+                    stilts in the strait between mainland Bohol and the island of Panglao. This town later became a
+                    prospering local center of power, also known as the the "Kingdom of Dapitan." It lasted until it was
+                    abandoned in 1563, out of fear for raids by the Portuguese and their allies from Ternate. It will be
+                    seen below how this event helped the Spanish to get a foothold in the Philippines.
+                </p>
+                <P data-aos="zoom-in-up">
+
+                    <b>The Arrival of the Spanish</b><br><br>
+                    In 1521, Ferdinand Magellan and his crew were the first Europeans to reach the Philippines coming
+                    from the East. When they arrived they weren't really welcome: Magellan himself was killed on Mactan
+                    Island near Cebu, by the hand of a local chieftain or "Datu", Lapu Lapu.
+
+                    Following Magellan's route, the Loaisa Expedition left La Carua in Spain on 24 July 1525. This
+                    expedition also reached the Philippines, but on the first of June, 1526, a hurricane separated the
+                    ships. One of the ships, the Santa Maria del Parral, stranded on on the shore of North-East
+                    Mindanao. The survivors were captured and sold into slavery. One of the crew members, Sebastian de
+                    Puerto (or de Puerta), came in the hands of the Boholano chief Sikatuna. This is the first contact
+                    on record between a Spaniard and a Boholano.
+
+                </P>
+                <p data-aos="zoom-in-up"><b>The Blood Compact of Legazpi and Sikatuna</b> <br><br>
+
+                    Also at Bohol, Legazpi was given a hostile welcome. From his Malay pilot, he learned that this
+                    hostility was due to marauding expeditions of the Portuguese. Coming from the Moluccas, the
+                    Portuguese raiders traversed the Visayan seas, and just a few years before, in 1563, had plundered
+                    Bohol and killed or enslaved about one thousand of its inhabitants. Of course, the Boholano's easily
+                    mistook the Spaniards for Portuguese.
+
+                    Again with the help of his pilot, Legazpi explained two chiefs of Bohol, Datu Sikatuna of Bool and
+                    Datu Sigala of Loboc that they were not Portuguese, and had come in peace, and not to plunder or
+                    kill. This convinced the Kings to end their hostility and enter pact of friendship. On 16 March 1565
+                    (or 25 March, records are confused due to the Gregorian calendar reform in 1584), Legazpi and
+                    Sikatuna performed the now famous blood compact, probably not far from the modern town of Loay. This
+                    event is still celebrated in Bohol every year in June with the Sandugo ("One Blood") festival. The
+                    same ceremony was repeated three days later with Sigala.
+                </p>
+
+                <p data-aos="zoom-in-up">
+                    <b> The Conquest of Cebu</b> <br><br>
+
+                    After he assured himself of the aid of Sikatuna and Sigala, Legazpi decided to try to establish a
+                    permanent Spanish settlement on Cebu. With the native kings as guides, he lifted his anchor and left
+                    Bohol on Easter Sunday, and arrived at Cebu on 27 April 1565.
+
+                    On the shore of Cebu, the local king Tupas already expected them. He had grouped his warriors in
+                    full battle array, ready to resist Legazpi and his invaders. In an attempt to negotiate a resolution
+                    of the impasse, a priest, father Urdaneta, went ashore, but he wasn't able to convince Tupas.
+                    Legazpi then initiated an attack. While the ship's artillery battered the coast, Spanish soldiers
+                    landed and attacked the Cebuano warriors. With their superior weapons the Spanish won a victory, and
+                    forced the troops of king Tupas to retreat to the hills.
+                </p>
+
+                <p data-aos="zoom-in-up"><b>Establishment of Catholicism</b><br><br>
+                    In the footsteps of the Spanish explorers came the missionaries. About thirty years after the
+                    Spanish established themselves on Cebu, on 17 November 1596, two Jesuit priests, Father Juan de
+                    Torres and Gabriel Sanchez, arrived in Baclayon, Bohol. It is said that the mother of the
+                    encomendero of Bohol, Do�a Catalina de Bolaos invited them. They established their headquarters in
+                    Baclayon, and quickly started to further spread the Catholic faith on the island.</p>
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <h3>BOHOLANO's</h3>
+            <p>"Welcome to Bohol, the friendly heart of the Visayas
+                and
+                one of
+                the most
+                attractive tourist destinations in the Philippines. We heartily invite you to come
+                and
+                visit Bohol
+                yourself, and offer you this website to help you get a first impression."</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong></strong><span>Bohol</span></strong>. All Rights Reserved 2021
+            </div>
+            <div class="credits">
+
+                Administered by <a href="">ENRIQUE ALFEREZ SIAROT</a>
+            </div>
+            <br>
+            <a href="#top" class="btn3"><i class="fa fa-arrow-up w3-margin-left"></i>To the
+                top</a>
+        </div>
+    </footer><!-- End Footer -->
+
+</body>
+<script>
+    AOS.init();
+</script>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>Sample</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./../src1/style/Index.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+  @media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s;
+      margin-top: 0;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+      color: rgb(16, 163, 60);
+    }
+
+    .navbar .dropdown-menu.fade-down {
+      top: 80%;
+      transform: rotateX(-75deg);
+      transform-origin: 0% 0%;
+    }
+
+    .navbar .dropdown-menu.fade-up {
+      top: 180%;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+      transition: .3s;
+      opacity: 1;
+      visibility: visible;
+      top: 100%;
+      transform: rotateX(0deg);
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg  bg-white" style="color: black;">
+    <a href="././Index.html" class="header-logo img"><img src="./../ezgif-7-13d5a03c8934.gif" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main_nav">
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="./Index.html">Home</a>
+        </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Tourist Spot </a>
+          <ul class="dropdown-menu fade-up">
+            <li><a class="dropdown-item" href="./Spots.html">Top 16 Places</a></li>
+            <li><a class="dropdown-item" href="./nature.html">Natures</a></li>
+            <li><a class="dropdown-item" href="./island&beaches.html">Islands & Beaches </a></li>
+            <li><a class="dropdown-item" href="food.html">Foods & Delicacies</a></li>
+            <li><a class="dropdown-item" href="monument.html">Monuments</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./culture.html "></i>Culture</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./article.html">Article</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+
+      </ul>
+
+
+
+  </nav>
+
+  <!------ Include the above in your HEAD tag ---------->
+  
+  <h1 class="ml2">Sunny mornings</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<style>
+  .ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+<script>
+  // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</body>
+
+</html>

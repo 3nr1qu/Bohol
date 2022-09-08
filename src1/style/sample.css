@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+    height: 70px;
+      position: sticky;
+      top: 0!important;
+      left: auto;
+      right: auto;
+      background: white;
+      color: black;
+      z-index: 10;
+      box-shadow: 2px 1px 14px rgba(0, 0, 0, 0.4)
+  }
+.header-logo img {
+    display: block;
+    height: calc(var(--header-inner-height) - 30px);
+    
+   
+}
+.body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+}
+
+
